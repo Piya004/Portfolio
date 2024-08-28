@@ -1,0 +1,134 @@
+body {
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    padding: 0;
+    background-color:#10161a;
+}
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    background-color:transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+.logo{
+    font-size: 25px;
+    color: azure;
+    font-weight: 600;
+}.navbar a {
+    font-size: 18px;
+    color: azure;
+    font-weight: 500;
+    margin-left: 35px;
+    transition: .3s;
+    }
+.navbar a:hover,
+.navbar a.Contact{
+     color: #66fc02
+}
+
+h2{
+    font-size: 32px;
+}
+
+.contact-container {
+    background-color:#10161a;
+    border-radius: 10px;
+    width: 400px;
+    padding: 20px;
+    margin: 100px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+.contact-container h2 {
+    color: #66fc02;
+    margin-bottom: 20px;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.input-group {
+    position: relative;
+}
+
+.input-group input,
+.input-group textarea {
+    width: 100%;
+    padding: 10px;
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid #66fc02;
+    color: #fff;
+    font-size: 1em;
+    outline: none;
+}
+
+.input-group label {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    color: #bbb;
+    font-size: 0.9em;
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+
+.input-group input:focus ~ label,
+.input-group input:valid ~ label,
+.input-group textarea:focus ~ label,
+.input-group textarea:valid ~ label {
+    top: -20px;
+    left: 0;
+    color: #66fc02;
+    font-size: 0.8em;
+}
+
+.message-group textarea {
+    resize: none;
+    height: 100px;
+}
+
+button {
+    padding: 10px;
+    background-color: #66fc02;
+    border: none;
+    border-radius: 5px;
+    color: #333;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #66fc02;
+}
+.contact-container:before{
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background:transparent;
+    z-index: -1; 
+}
+
+
+.contact-container:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    background: linear-gradient(235deg, #88ff0028,#060c214f,#00bbd442);
+    transition: .8s;
+}

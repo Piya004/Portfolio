@@ -1,0 +1,80 @@
+body {
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background: #10161a;;
+    color:#10161a;
+    margin: 0;
+    padding: 0;
+}
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    background-color:transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+.logo{
+    font-size: 25px;
+    color: azure;
+    font-weight: 600;
+}.navbar a {
+    font-size: 18px;
+    color: azure;
+    font-weight: 500;
+    margin-left: 35px;
+    transition: .3s;
+    }
+.navbar a:hover,
+.navbar a.Skills{
+     color: #66fc02
+}
+
+
+.skills-section {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.skills-section h2 {
+    font-size: 2em;
+    margin-bottom: 30px;
+    color: #66fc02;
+}
+
+.skills-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    
+}
+
+.skill {
+    background-color:#10161a;
+    border-radius: 10px;
+    padding: 20px;
+    width: 250px;
+    text-align: center;
+    background: linear-gradient(235deg, #88ff0028,#060c214f,#00bbd442);
+}
+
+.skill img {
+    width: 96px;
+    height: 96px;
+    margin-bottom: 15px;
+}
+
+.skill h3 {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+}
+
+.skill p {
+    font-size: 1em;
+    line-height: 1.5;
+    color: azure;
+}
